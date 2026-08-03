@@ -1,0 +1,225 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================================================
+   Design tokens — Techix
+   Derivados del logotipo: navy profundo + azul eléctrico de marca.
+   ============================================================ */
+@layer base {
+  :root {
+    --bg: 0 0% 100%;
+    --surface: 214 44% 96.5%;
+    --elevated: 0 0% 100%;
+    --border: 215 26% 88%;
+    --border-strong: 215 22% 80%;
+    --fg: 222 47% 11%;
+    --muted: 220 14% 38%;
+    --subtle: 219 13% 45%;
+
+    /* Navy de marca (fijo, no cambia con el tema) para bloques destacados */
+    --navy: 222 47% 11%;
+
+    --accent: 223 100% 59%;
+    --accent-hover: 223 90% 53%;
+    --accent-soft: 223 90% 95%;
+    --accent-fg: 0 0% 100%;
+
+    --ring: 223 100% 59%;
+  }
+
+  .dark {
+    --bg: 222 47% 5%;
+    --surface: 222 38% 8%;
+    --elevated: 222 33% 11%;
+    --border: 222 24% 17%;
+    --border-strong: 222 20% 24%;
+    --fg: 210 32% 96%;
+    --muted: 218 14% 66%;
+    --subtle: 218 11% 50%;
+
+    --navy: 222 47% 11%;
+
+    --accent: 223 100% 68%;
+    --accent-hover: 223 100% 74%;
+    --accent-soft: 223 46% 17%;
+    --accent-fg: 222 47% 6%;
+
+    --ring: 223 100% 68%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-bg text-fg antialiased;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11", "ss01";
+    text-rendering: optimizeLegibility;
+  }
+
+  ::selection {
+    @apply bg-accent/25 text-fg;
+  }
+
+  :focus-visible {
+    @apply outline-none ring-2 ring-accent/60 ring-offset-2 ring-offset-bg rounded-sm;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  /* Botón primario reutilizable */
+  .btn-primary {
+    @apply inline-flex h-11 items-center justify-center gap-2 rounded-full bg-accent px-6 text-sm font-medium text-accent-fg
+      shadow-[0_1px_2px_hsl(var(--accent)/0.4),0_8px_24px_-8px_hsl(var(--accent)/0.55)]
+      transition-all duration-200 ease-smooth
+      hover:-translate-y-0.5 hover:bg-[hsl(var(--accent-hover))] active:translate-y-0;
+  }
+
+  .btn-secondary {
+    @apply inline-flex h-11 items-center justify-center gap-2 rounded-full border border-border bg-elevated px-6 text-sm font-medium text-fg
+      transition-all duration-200 ease-smooth hover:-translate-y-0.5 hover:border-[hsl(var(--border-strong))];
+  }
+
+  /* Etiqueta "eyebrow" técnica en monoespaciada */
+  .eyebrow {
+    @apply inline-flex items-center gap-2 font-mono text-xs font-medium uppercase tracking-[0.14em] text-accent;
+  }
+
+  /* Contenido de artículo */
+  .prose-techix {
+    @apply prose prose-neutral dark:prose-invert max-w-none
+      prose-headings:font-semibold prose-headings:tracking-tight prose-headings:text-fg
+      prose-h2:mt-14 prose-h2:mb-4 prose-h2:text-[1.6rem] prose-h2:scroll-mt-24
+      prose-h3:mt-9 prose-h3:mb-3 prose-h3:text-xl prose-h3:scroll-mt-24
+      prose-p:leading-[1.8] prose-p:text-fg/85
+      prose-li:leading-[1.8] prose-li:text-fg/85
+      prose-a:font-medium prose-a:text-accent prose-a:no-underline hover:prose-a:underline prose-a:underline-offset-4
+      prose-strong:text-fg prose-strong:font-semibold
+      prose-code:rounded-md prose-code:bg-surface prose-code:px-1.5 prose-code:py-0.5
+      prose-code:text-[0.85em] prose-code:font-medium prose-code:before:content-[''] prose-code:after:content-['']
+      prose-pre:rounded-xl prose-pre:border prose-pre:border-border prose-pre:bg-surface prose-pre:text-fg
+      prose-blockquote:border-l-2 prose-blockquote:border-accent prose-blockquote:not-italic
+      prose-blockquote:pl-5 prose-blockquote:text-fg/70 prose-blockquote:font-normal
+      prose-img:rounded-2xl prose-img:border prose-img:border-border
+      prose-hr:border-border
+      prose-table:text-sm prose-th:text-fg prose-td:text-fg/80;
+  }
+
+  .heading-anchor {
+    @apply text-fg no-underline;
+  }
+
+  /* Tarjeta con borde que se ilumina en hover */
+  .card {
+    @apply relative rounded-2xl border border-border bg-elevated transition-all duration-300 ease-smooth
+      shadow-[0_1px_2px_hsl(var(--navy)/0.03)]
+      hover:-translate-y-0.5 hover:border-accent/40
+      hover:shadow-[0_4px_10px_hsl(var(--navy)/0.06),0_22px_46px_-18px_hsl(var(--navy)/0.26)];
+  }
+
+  /* Cinta/etiqueta de sección sobre imágenes (estilo editorial) */
+  .cover-badge {
+    @apply absolute left-3 top-3 z-10 inline-flex items-center gap-1.5 rounded-full
+      bg-[hsl(var(--navy)/0.82)] px-2.5 py-1 text-[10.5px] font-bold uppercase tracking-wide text-white
+      ring-1 ring-white/15 backdrop-blur-sm;
+  }
+
+  /* Kicker de categoría (estilo periódico, en azul de marca) */
+  .kicker {
+    @apply inline-flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-[0.08em] text-accent;
+  }
+
+  /* Regla de sección: título con subrayado navy grueso */
+  .section-rule {
+    @apply border-b-2 border-[hsl(var(--navy))] dark:border-fg;
+  }
+
+  /* Degradado inferior sobre las imágenes de portada (da profundidad y marca) */
+  .cover-scrim::after {
+    content: "";
+    @apply pointer-events-none absolute inset-0;
+    background: linear-gradient(to top, hsl(var(--navy) / 0.5) 0%, transparent 45%);
+  }
+}
+
+@layer utilities {
+  /* Fade-in al hacer scroll (Reveal.tsx) */
+  .reveal {
+    opacity: 0;
+    transform: translateY(16px);
+    transition:
+      opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+      transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    will-change: opacity, transform;
+  }
+  .reveal.is-visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+  .text-pretty {
+    text-wrap: pretty;
+  }
+
+  /* Texto con degradado sutil (para acentos del titular) */
+  .text-gradient {
+    background: linear-gradient(
+      100deg,
+      hsl(var(--fg)) 0%,
+      hsl(var(--fg)) 55%,
+      hsl(var(--accent)) 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Rejilla sutil de fondo */
+  .bg-grid {
+    background-image:
+      linear-gradient(hsl(var(--border) / 0.55) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(var(--border) / 0.55) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 75% 55% at 50% 0%, #000 35%, transparent 72%);
+    -webkit-mask-image: radial-gradient(ellipse 75% 55% at 50% 0%, #000 35%, transparent 72%);
+  }
+
+  /* Glow "aurora" de marca detrás del héroe */
+  .aurora {
+    background:
+      radial-gradient(40% 55% at 50% 0%, hsl(var(--accent) / 0.18), transparent 70%),
+      radial-gradient(30% 40% at 78% 12%, hsl(223 100% 62% / 0.12), transparent 70%);
+  }
+
+  /* Borde superior con degradado (hairline premium) */
+  .hairline-top {
+    box-shadow: inset 0 1px 0 0 hsl(var(--fg) / 0.04);
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
