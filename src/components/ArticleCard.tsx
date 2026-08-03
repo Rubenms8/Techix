@@ -16,7 +16,7 @@ interface ArticleCardProps {
 export function ArticleCard({ article, priority, className, showExcerpt = false }: ArticleCardProps) {
   const category = getCategory(article.category);
   return (
-    <article className={cn("card group flex flex-col overflow-hidden", className)}>
+    <article className={cn("card group flex h-full flex-col overflow-hidden", className)}>
       <Link href={`/articulo/${article.slug}`} className="flex flex-1 flex-col">
         <div className="cover-scrim relative aspect-[16/10] overflow-hidden">
           {article.cover ? (
@@ -35,7 +35,7 @@ export function ArticleCard({ article, priority, className, showExcerpt = false 
           )}
         </div>
 
-        <div className="flex flex-1 flex-col p-5">
+        <div className="flex flex-1 flex-col p-4">
           <span className="kicker">{category?.short}</span>
 
           <h3 className="mt-2 text-balance text-[1.05rem] font-semibold leading-snug tracking-tight text-fg transition-colors duration-200 group-hover:text-accent">
@@ -48,7 +48,7 @@ export function ArticleCard({ article, priority, className, showExcerpt = false 
             </p>
           )}
 
-          <div className="mt-3.5 flex items-center gap-2 border-t border-border pt-3 text-xs text-subtle">
+          <div className="mt-auto flex items-center gap-2 border-t border-border pt-2.5 text-xs text-subtle">
             <time dateTime={article.date}>{formatDateShort(article.date)}</time>
             <span aria-hidden>·</span>
             <span>{article.readingTime} de lectura</span>

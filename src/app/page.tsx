@@ -31,8 +31,8 @@ export default function HomePage() {
   const rest = all.filter((a) => a.slug !== featured?.slug);
 
   const secondary = rest.slice(0, 3);
-  const river = rest.slice(3, 8);
-  const moreHeadlines = rest.slice(8, 14);
+  const river = rest.slice(3, 9);
+  const moreHeadlines = rest.slice(9, 17);
 
   const bySlug = new Map(all.map((a) => [a.slug, a]));
   const mostRead = ESSENTIALS.map((s) => bySlug.get(s)).filter(Boolean) as ArticleMeta[];
@@ -76,8 +76,8 @@ export default function HomePage() {
       </div>
 
       {/* ===== Portada (front page) ===== */}
-      <section className="container pt-6 lg:pt-8">
-        <div className="grid gap-8 lg:grid-cols-12">
+      <section className="container pt-5 lg:pt-6">
+        <div className="grid gap-6 lg:grid-cols-12 lg:gap-8">
           {/* Columna principal */}
           <div className="lg:col-span-8">
             {featured && (
@@ -87,7 +87,7 @@ export default function HomePage() {
             )}
 
             {secondary.length > 0 && (
-              <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
                 {secondary.map((a, i) => (
                   <Reveal key={a.slug} delay={(i % 3) * 70} className={cn(i === 2 && "sm:hidden lg:block")}>
                     <ArticleCard article={a} showExcerpt />
@@ -97,7 +97,7 @@ export default function HomePage() {
             )}
 
             {moreHeadlines.length > 0 && (
-              <div className="mt-8">
+              <div className="mt-7">
                 <div className="section-rule mb-1 pb-2">
                   <h2 className="text-sm font-bold uppercase tracking-wider text-fg">Más historias</h2>
                 </div>
@@ -122,7 +122,7 @@ export default function HomePage() {
               </SidebarModule>
 
               {mostRead.length > 0 && (
-                <div className="mt-8 rounded-2xl border border-border bg-surface p-5">
+                <div className="mt-6 rounded-2xl border border-border bg-surface p-5">
                   <SidebarModule title="Lo más leído">
                     <ol className="mt-1">
                       {mostRead.map((a, i) => (
@@ -148,7 +148,7 @@ export default function HomePage() {
       <Rail slug="guias" />
 
       {/* ===== Newsletter ===== */}
-      <div className="mt-16">
+      <div className="mt-12">
         <Reveal>
           <Newsletter />
         </Reveal>
@@ -206,7 +206,7 @@ function HeadlineItem({ article, rank }: { article: ArticleMeta; rank: number })
 /** Bloque de secciones en navy: hace muy visibles las categorías y añade color de marca. */
 function SectionCards() {
   return (
-    <section className="container mt-16">
+    <section className="container mt-12">
       <div className="section-rule mb-6 flex items-end justify-between gap-4 pb-3">
         <h2 className="text-xl font-semibold tracking-tight text-fg sm:text-2xl">Explora por sección</h2>
         <span className="hidden text-sm text-subtle sm:block">Todo el contenido, organizado</span>
@@ -269,7 +269,7 @@ function MiniHeadline({ article }: { article: ArticleMeta }) {
 
 function Rail({ slug, tint = false }: { slug: CategorySlug; tint?: boolean }) {
   const category = getCategory(slug);
-  const articles = getArticlesByCategory(slug).slice(0, 3);
+  const articles = getArticlesByCategory(slug).slice(0, 4);
   if (!category || articles.length === 0) return null;
 
   const inner = (
@@ -290,10 +290,10 @@ function Rail({ slug, tint = false }: { slug: CategorySlug; tint?: boolean }) {
         </Link>
       </div>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
         {articles.map((a, i) => (
-          <Reveal key={a.slug} delay={(i % 3) * 70} className={cn(i === 2 && "sm:hidden lg:block")}>
-            <ArticleCard article={a} showExcerpt={i === 0} />
+          <Reveal key={a.slug} delay={(i % 4) * 60}>
+            <ArticleCard article={a} />
           </Reveal>
         ))}
       </div>
@@ -302,17 +302,17 @@ function Rail({ slug, tint = false }: { slug: CategorySlug; tint?: boolean }) {
 
   if (tint) {
     return (
-      <section className="mt-14 border-y border-border bg-surface py-12">
+      <section className="mt-12 border-y border-border bg-surface py-10">
         <div className="container">{inner}</div>
       </section>
     );
   }
-  return <section className="container mt-14">{inner}</section>;
+  return <section className="container mt-12">{inner}</section>;
 }
 
 function Trending() {
   return (
-    <section className="container mt-14">
+    <section className="container mt-12">
       <div className="relative overflow-hidden rounded-3xl border border-white/10 bg-[hsl(var(--navy))] p-7 sm:p-10">
         {/* Glow de marca sutil */}
         <div
