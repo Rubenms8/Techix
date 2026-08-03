@@ -8,11 +8,13 @@
    ============================================================ */
 @layer base {
   :root {
-    --bg: 0 0% 100%;
-    --surface: 214 44% 96.5%;
+    /* Fondo de página con un gris azulado muy tenue (no blanco puro): las
+       tarjetas blancas destacan y las secciones se separan mejor. */
+    --bg: 214 34% 97.8%;
+    --surface: 214 40% 94.5%;
     --elevated: 0 0% 100%;
-    --border: 215 26% 88%;
-    --border-strong: 215 22% 80%;
+    --border: 215 27% 86.5%;
+    --border-strong: 215 22% 79%;
     --fg: 222 47% 11%;
     --muted: 220 14% 38%;
     --subtle: 219 13% 45%;
