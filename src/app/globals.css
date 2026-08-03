@@ -121,6 +121,14 @@
       prose-table:text-sm prose-th:text-fg prose-td:text-fg/80;
   }
 
+  /* Tablas anchas: scroll horizontal dentro de su contenedor en móvil */
+  .prose-techix .table-scroll {
+    @apply my-6 max-w-full overflow-x-auto;
+  }
+  .prose-techix .table-scroll > table {
+    @apply my-0 min-w-[32rem];
+  }
+
   .heading-anchor {
     @apply text-fg no-underline;
   }
