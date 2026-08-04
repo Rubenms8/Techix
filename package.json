@@ -10,6 +10,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@next/third-parties": "^14.2.35",
     "github-slugger": "^2.0.0",
     "gray-matter": "4.0.3",
     "next": "14.2.35",

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, Instrument_Serif, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 import { siteConfig } from "@/lib/site";
 import { ThemeProvider } from "@/components/ThemeProvider";
@@ -137,6 +138,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <CookieConsent />
         </ThemeProvider>
         <AdSenseScript />
+        {/* Google Analytics 4 — respeta el Consent Mode v2 definido en <head>
+            (analytics_storage denegado por defecto hasta que el usuario acepta). */}
+        <GoogleAnalytics gaId="G-X580HMKX98" />
       </body>
     </html>
   );

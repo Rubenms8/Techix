@@ -16,7 +16,6 @@ const STORAGE_KEY = "techix-cookie-consent";
 declare global {
   interface Window {
     gtag?: (...args: unknown[]) => void;
-    dataLayer?: unknown[];
   }
 }
 
