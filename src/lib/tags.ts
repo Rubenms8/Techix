@@ -17,6 +17,7 @@ export function slugifyTag(raw: string): string {
 const LABELS: Record<string, string> = {
   chatgpt: "ChatGPT",
   "chatgpt-plus": "ChatGPT Plus",
+  gpts: "GPTs",
   openai: "OpenAI",
   claude: "Claude",
   anthropic: "Anthropic",
