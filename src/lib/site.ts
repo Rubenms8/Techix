@@ -3,7 +3,7 @@ export const siteConfig = {
   tagline: "Inteligencia Artificial, con criterio.",
   description:
     "Techix es la plataforma sobre Inteligencia Artificial: noticias que importan, nuevas herramientas, comparativas honestas y guías prácticas. Sin ruido.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://techix.dev",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.techix.es",
   locale: "es_ES",
   author: "Redacción Techix",
   twitter: "@techixai",

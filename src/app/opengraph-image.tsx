@@ -68,7 +68,7 @@ export default function OgImage() {
         {/* Pie */}
         <div style={{ display: "flex", alignItems: "center", gap: "16px" }}>
           <div style={{ height: 4, width: 56, background: "#2f6bff", borderRadius: 2 }} />
-          <div style={{ color: "#6b7d99", fontSize: 24 }}>techix.dev</div>
+          <div style={{ color: "#6b7d99", fontSize: 24 }}>techix.es</div>
         </div>
       </div>
     ),
