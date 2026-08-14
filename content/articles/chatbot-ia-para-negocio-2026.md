@@ -61,6 +61,8 @@ Para la mayoría de pymes, una herramienta **sin código** es lo más rápido y 
 
 Un chatbot con IA es una de las inversiones más rentables para un negocio en 2026: atiende siempre, capta clientes y libera a tu equipo de lo repetitivo. Reúne tu información, elige una herramienta sin código, entrénalo bien y define cuándo entra un humano. Bien montado, no reemplaza el trato humano donde importa: lo complementa, encargándose de todo lo demás para que tú te centres en hacer crecer tu negocio.
 
+Y la atención al cliente es solo una pieza: descubre todas las formas en que la IA ayuda a un negocio pequeño en [IA para pymes y autónomos](/articulo/ia-para-pymes-autonomos-2026).
+
 ## Preguntas frecuentes
 
 ### ¿Necesito saber programar para montar un chatbot con IA?

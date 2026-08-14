@@ -31,7 +31,7 @@ Redactar, responder y ajustar el tono de tus mensajes en segundos.
 
 Que la IA tome notas, resuma y extraiga las tareas por ti.
 
-- **Herramientas:** **Microsoft Copilot** (resume reuniones de Teams), asistentes de notas con IA, **Gemini** en Google Meet.
+- **Herramientas:** **Microsoft Copilot** (resume reuniones de Teams), asistentes de notas con IA, **Gemini** en Google Meet. Para transcribir la reunión entera, compara [las mejores IA para transcribir audio y reuniones](/articulo/mejores-ia-transcribir-audio-reuniones-2026).
 - **Cómo usarlo:** deja que transcriba y luego pide "resume la reunión en 5 puntos y lista las tareas con responsable".
 - **Truco:** pídele también las **decisiones tomadas** y los **puntos pendientes** para el acta.
 
@@ -106,6 +106,8 @@ No intentes usarlo todo a la vez. **Elige la tarea que más tiempo te roba** cad
 ## Conclusión
 
 La IA en el trabajo no va de sustituir a las personas, sino de **liberarlas de lo repetitivo** para que se centren en lo que aporta valor. Empieza por una tarea concreta —los correos, las reuniones o los informes—, elige la herramienta adecuada y mide cuánto tiempo ahorras. Multiplica eso por 52 semanas y entenderás por qué, en 2026, saber trabajar con IA ya no es una ventaja: es lo normal.
+
+Y si tienes tu propio negocio, no solo trabajas en uno, tenemos una guía específica: [IA para pymes y autónomos](/articulo/ia-para-pymes-autonomos-2026).
 
 ## Preguntas frecuentes
 

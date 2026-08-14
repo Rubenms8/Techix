@@ -42,6 +42,8 @@ Ver un vídeo de una hora para sacar tres ideas es un desperdicio de tiempo. Par
 - **Extensiones y herramientas de resumen de YouTube** que generan el resumen a partir de la transcripción.
 - **Pega la transcripción** (disponible en muchos vídeos) en ChatGPT y pide el resumen.
 
+¿Tienes un audio o una reunión en vez de un vídeo? Primero pásalo a texto con [las mejores IA para transcribir audio y reuniones](/articulo/mejores-ia-transcribir-audio-reuniones-2026) y luego resúmelo.
+
 ```txt
 Resume este vídeo en 7 puntos clave con los minutos aproximados de cada tema.
 Transcripción: [pega la transcripción].

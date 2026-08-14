@@ -51,7 +51,7 @@ Aquí la IA brilla:
 - **Edición por texto:** borras palabras del transcript y se borran del audio (adiós a los "eeeh").
 - **Corte de silencios** automático.
 
-Herramientas modernas de edición hacen esto de forma casi automática, sin ser técnico.
+Herramientas modernas de edición hacen esto de forma casi automática, sin ser técnico. Y si necesitas el texto completo del episodio (para las notas o los subtítulos), compara [las mejores IA para transcribir audio](/articulo/mejores-ia-transcribir-audio-reuniones-2026).
 
 ## Paso 5: notas, título y portada
 
