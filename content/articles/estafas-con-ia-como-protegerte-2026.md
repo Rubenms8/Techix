@@ -60,6 +60,8 @@ Supuestas IA que "garantizan" ganancias en criptomonedas o bolsa. **Nadie garant
 
 Las estafas con IA de 2026 son sofisticadas, pero se apoyan siempre en lo mismo: **urgencia y una historia creíble**. Tu mejor defensa no es tecnológica, es de sentido común: verifica por otro canal, desconfía de las prisas y recuerda que nadie garantiza ganancias. La IA ha hecho más listos a los estafadores; que no te pille desprevenido. Un minuto de comprobación puede ahorrarte un disgusto enorme.
 
+Protegerte de los fraudes es una cara de la moneda; la otra es cuidar tus propios datos cuando usas estas herramientas. Lo vemos en [privacidad y seguridad al usar IA](/articulo/privacidad-seguridad-ia-proteger-datos-2026).
+
 ## Preguntas frecuentes
 
 ### ¿Pueden clonar mi voz con IA?

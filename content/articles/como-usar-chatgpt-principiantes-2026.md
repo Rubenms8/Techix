@@ -135,7 +135,7 @@ No siempre. Puede cometer errores, sobre todo con datos concretos. Úsalo para c
 
 ### ¿Es seguro usar ChatGPT?
 
-Sí, con sentido común. No compartas contraseñas, datos bancarios ni información confidencial, ya que las conversaciones pueden usarse para mejorar el servicio.
+Sí, con sentido común. No compartas contraseñas, datos bancarios ni información confidencial, ya que las conversaciones pueden usarse para mejorar el servicio. Puedes desactivar ese uso y proteger tus datos siguiendo nuestra guía de [privacidad y seguridad al usar IA](/articulo/privacidad-seguridad-ia-proteger-datos-2026).
 
 ### ¿En qué se diferencia el plan gratis del de pago?
 
