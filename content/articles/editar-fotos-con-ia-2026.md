@@ -58,6 +58,8 @@ Las funciones más útiles hoy:
 
 Editar fotos con IA en 2026 pone en tus manos, gratis y en segundos, lo que antes exigía un experto: quitar fondos, mejorar la calidad, ampliar, restaurar y borrar lo que sobra. Elige la herramienta según lo que necesites, parte de una buena foto y revisa el resultado. Tanto si vendes, creas contenido o quieres rescatar un recuerdo, tus imágenes pueden verse profesionales sin saber nada de diseño.
 
+¿Y si quieres rediseñar el espacio entero en vez de retocar la foto? La IA también decora: sube la foto de tu habitación y mira cómo quedaría en otro estilo con [IA para decorar interiores](/articulo/ia-para-decorar-interiores-2026).
+
 ## Preguntas frecuentes
 
 ### ¿Se pueden editar fotos con IA gratis?

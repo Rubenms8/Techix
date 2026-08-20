@@ -99,6 +99,8 @@ Trucos rápidos: sé concreto con el estilo ("acuarela", "fotografía 35 mm", "r
 
 No hay un único mejor generador de imágenes con IA en 2026: hay uno ideal para cada objetivo. **Midjourney** gana en belleza, **DALL·E** en facilidad y por ser gratis, **Leonardo** en producción, **Firefly** en seguridad comercial e **Ideogram** en texto. Si solo vas a probar uno, empieza por **DALL·E vía Bing** (gratis) y, si te enganchas al arte, da el salto a **Midjourney**.
 
+¿Buscas algo más concreto, como rediseñar una habitación a partir de su foto? Para eso hay herramientas especializadas: lo vemos en [IA para decorar interiores](/articulo/ia-para-decorar-interiores-2026).
+
 ## Preguntas frecuentes
 
 ### ¿Cuál es el mejor generador de imágenes con IA en 2026?
